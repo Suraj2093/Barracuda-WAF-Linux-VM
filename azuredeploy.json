@@ -560,7 +560,7 @@
             "autoUpgradeMinorVersion": true,
             "settings": {
               "fileUris": [
-                "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/apache2-on-ubuntu-vm/install_apache.sh"
+                "https://raw.githubusercontent.com/Suraj2093/Barracuda-WAF-Linux-VM/master/Install-Apache.sh"
               ],
               "commandToExecute": "sh install_apache.sh"
             },
