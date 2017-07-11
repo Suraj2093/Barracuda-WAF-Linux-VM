@@ -562,7 +562,7 @@
               "fileUris": [
                 "https://raw.githubusercontent.com/Suraj2093/Barracuda-WAF-Linux-VM/master/Install-Apache.sh"
               ],
-              "commandToExecute": "sh install_apache.sh"
+              "commandToExecute": "sh Install-Apache.sh"
             },
             "protectedSettings": {
 
