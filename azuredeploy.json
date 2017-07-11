@@ -214,13 +214,13 @@
       "properties": {
         "securityRules": [
           {
-            "name": "RDP-allow",
+            "name": "default-allow-ssh",
             "properties": {
               "protocol": "Tcp",
               "sourcePortRange": "*",
-              "destinationPortRange": "3389",
-              "sourceAddressPrefix": "[parameters('remoteAllowedCIDR')]",
-              "destinationAddressPrefix": "10.0.1.0/24",
+              "destinationPortRange": "22",
+              "sourceAddressPrefix": "*",
+              "destinationAddressPrefix": "*",
               "access": "Allow",
               "priority": 110,
               "direction": "Inbound"
