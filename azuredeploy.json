@@ -345,9 +345,9 @@
       "name": "[variables('loadBalancerName')]",
       "apiVersion": "2015-06-15",
       "location": "[resourceGroup().location]",
-      "comments": "This Load Balancer is used to allow RDP access to Web VMs",
+      "comments": "This Load Balancer is used to allow SSH access to Web VMs",
       "tags": {
-        "displayName": "Web RDP Load Balancer",
+        "displayName": "Web SSH Load Balancer",
         "quickstartName": "[variables('quickstartTags').name]",
         "provider": "[variables('barracudaNetworksTags').provider]"
       },
@@ -377,9 +377,9 @@
       "name": "[concat(variables('loadBalancerName'), '/', 'RDPVM', copyIndex(1))]",
       "apiVersion": "2016-03-30",
       "location": "[resourceGroup().location]",
-      "comments": "This resource adds all the NAT rules needed to allow RDP access to Web Servers VMs",
+      "comments": "This resource adds all the NAT rules needed to allow SSH access to Web Servers VMs",
       "tags": {
-        "displayName": "LB RDP NAT rules",
+        "displayName": "LB SSH NAT rules",
         "quickstartName": "[variables('quickstartTags').name]",
         "provider": "[variables('barracudaNetworksTags').provider]"
       },
@@ -396,7 +396,7 @@
         },
         "protocol": "Tcp",
         "frontendPort": "[copyIndex(5001)]",
-        "backendPort": 3389,
+        "backendPort": 22,
         "enableFloatingIP": false
       }
     },
